@@ -12,17 +12,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+// Agregando los namespaces necesarios para SQL Server
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace Examen_Oscar
-{
-    /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
-    /// </summary>
+{ 
     public partial class MainWindow : Window
+{
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
+}
 }

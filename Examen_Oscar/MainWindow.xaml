@@ -5,10 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Examen_Oscar"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="850">
     <Grid>
         <Grid>
-            
+            <Grid.RowDefinitions>
+                <!--Barra de herramientas y area de trabajo-->
+                
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Background="PowderBlue">
+                <!--Barra de estado-->
+                <Label FontFamily="Work Sans" Foreground="White" FontStretch="ExtraExpanded" Margin="0,0,0,0" Content="Genysis"/>
+                <Button x:Name="BtnSalir" Content="X" HorizontalAlignment="Left" Margin="800,-1,0,0" VerticalAlignment="Top" Width="45" Background="Red" Height="30" Click="Salir" />
+
+            </Grid>
+            <Grid Grid.Row="1">
+                <!--Area de trabajo-->
+                <Grid.ColumnDefinitions>
+                    <!--Definicion de las columnas-->
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width=""/>
+                    
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <!--Definicion de filas Grid0-->
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="0"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <!--Grid Titulo-->
+                        <Label  FontSize="20" FontWeight="DemiBold" Content="Genysis" Margin="150,10,150,-0.4" FontFamily="Work Sans"/>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Label FontFamily="Work Sans" Content="Nombres" HorizontalAlignment="Left" Margin="28,10,0,0" VerticalAlignment="Top"/>
+                        <Label FontFamily="Work Sans" Content="Apellidos" HorizontalAlignment="Left" Margin="28,50,0,0" VerticalAlignment="Top"/>
+                        <Label FontFamily="Work Sans" Content="Nombre de usuario" HorizontalAlignment="Left" Margin="28,100,0,0" VerticalAlignment="Top"/>
+                        <Label FontFamily="Work Sans" Content="Contraseña" HorizontalAlignment="Left" Margin="28,150,0,0" VerticalAlignment="Top"/>
+                        <Label FontFamily="Work Sans" Content="Correo electrónico" HorizontalAlignment="Left" Margin="28,200,0,0" VerticalAlignment="Top"/>
+                        <Label FontFamily="Work Sans" Content="Tipo de ususario" HorizontalAlignment="Left" Margin="28,250,0,0" VerticalAlignment="Top"/>
+                        <Label FontFamily="Work Sans" Content="Estado" HorizontalAlignment="Left" Margin="28,300,0,0" VerticalAlignment="Top"/>
+
+                        <TextBox Name="txtNombre" HorizontalAlignment="Left" Height="25" Margin="150,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+                        <TextBox Name="txtApellido" HorizontalAlignment="Left" Height="25" Margin="150,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+                        <TextBox Name="txtNombreUsuario" HorizontalAlignment="Left" Height="25" Margin="150,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+                        <TextBox Name="txtContraseña" HorizontalAlignment="Left" Height="25" Margin="150,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+                        <TextBox Name="txtCorreo" HorizontalAlignment="Left" Height="25" Margin="150,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+                        <TextBox Name="txtTipoUsuario" HorizontalAlignment="Left" Height="25" Margin="150,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+                        <TextBox Name="txtEstado" HorizontalAlignment="Left" Height="25" Margin="150,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+                        
+                    </Grid>
+                </Grid>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
+                        
